@@ -1,0 +1,26 @@
+Prototype
+https://invis.io/TPDSJERUH
+
+Wireframe
+https://drive.google.com/file/d/0B6DNHaRwksxbYlNBV0tEN2duSTFSY1hPcHZUYmZqdDRMNXI0/view?usp=sharing
+ 
+CSS effects
+Page transitions
+popups - https://codepen.io/marcelo-ribeiro/pen/xOOKpO
+slide - https://codepen.io/timrijkse/pen/ALgZpp
+apperture/reload - https://codepen.io/jcoulterdesign/pen/EPNrzg
+ 
+Close button/Menu buttons (‘touchup’)
+https://codepen.io/JonasBadalic/pen/MYaMBz
+ 
+Burger Menu
+https://jonsuh.com/hamburgers/
+ 
+Overview
+- 40 pages (using about 6 templates)
+  - HCAF section has 7 pages, 4 with up to 5 popups
+- burger menu
+- the ability to download PDFs
+- the ability to run video
+- test windows edge touch
+- works without offline

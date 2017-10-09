@@ -1,0 +1,99 @@
+.modal {
+  min-height: auto;
+  position: static;
+  display: inline-block;
+  background-color: red;
+  cursor: pointer;
+  .close-button {
+    display: none;
+  }
+  .modal-body {
+    display: none;
+  } 
+  &.is-expanded {
+    position: absolute;
+    background-color: red;
+    min-height: 100vh;
+    top: 0;
+    z-index: 20;
+    display: block;
+    cursor: auto;
+    .modal-body {
+      display: block;
+    }
+    .close-button {
+      display: inline-block;
+      position: absolute;
+      right: 1rem;
+      top: 1rem;
+    }    
+  }
+}
+
+// Variables
+//
+$section-class: 'modal';
+$section-expanded-class: 'is-expanded';
+$section-has-expanded-class: 'has-expanded-item';
+
+$section-colors: #F06060, #FA987D, #72CCA7, #10A296;
+
+$section-transition-property: all;
+$section-transition-duration: 600ms;
+$section-transition-timing-function: cubic-bezier(.4,.2,0,1);
+
+
+// Component Styles
+.#{$section-class} {
+  width: 50%;
+  height: 50%;
+  overflow: hidden;
+  transform: scale(1);
+  will-change: transform;
+  transition-property: $section-transition-property;
+  transition-duration: $section-transition-duration;
+  transition-timing-function: $section-transition-timing-function;
+
+  &.#{$section-expanded-class} {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .#{$section-has-expanded-class} &:not(.#{$section-expanded-class}) {
+    transform: scale(0);
+    opacity: 0;
+  }
+
+}
+  
+
+// .modal .close-button {
+//   position: absolute;
+//   top: 0;
+//   right: 0;
+//   display: flex;
+//   visibility: hidden;
+//   width: 3rem;
+//   height: 3rem;
+//   align-items: center;
+//   justify-content: center;
+//   line-height: 1;
+//   font-size: 2rem;
+//   text-align: center;
+//   color: #fff;
+//   opacity: 0;
+//   cursor: pointer;
+//   transition: opacity 200ms linear;
+// }
+
+// .#{$section-class}.#{$section-expanded-class} {
+//   .close-button {
+//     visibility: visible;
+//     opacity: 1;
+//     transition: opacity 200ms linear $section-transition-duration;
+//   }
+// }

@@ -1,0 +1,16 @@
+@import 'burger';
+
+.menu-button {
+  position: absolute;
+  right: 1rem;
+  top: 1rem;
+  z-index: 11;
+}
+
+.menu {
+  min-height: 100vh;
+  background-color: $grey;
+  position: absolute;
+  top: 0;
+  z-index: 10;
+}
